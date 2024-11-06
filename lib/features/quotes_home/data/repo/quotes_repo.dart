@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:random_quote_generator/features/quotes_home/data/models/quote_model.dart';
-class Api{
 
+class Api{
   Future<List<QuoteModel>> getRandomQuotes() async{
     try{
       final response = await http.get(Uri.parse('https://zenquotes.io/api/quotes'));
